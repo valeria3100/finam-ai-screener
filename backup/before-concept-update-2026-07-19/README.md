@@ -1,13 +1,6 @@
 # Оптимизация и синхронизация портфеля
 
-Статичные HTML-презентации концепции и PRD новой фичи AI-Скринера. Не требуют сборщика и внешних библиотек.
-
-## Презентации
-
-- Product Concept: `/index.html`
-- Product Requirements Document: `/prd/index.html`
-
-PRD хранится как отдельный entry point и использует общие `styles.css`, `main.js` и бренд-ассеты. Специфичные для PRD раскладки находятся в `prd/prd.css`.
+Статичная HTML-презентация концепции новой фичи AI-Скринера. Не требует сборщика и внешних библиотек.
 
 ## Локальный запуск
 
@@ -17,10 +10,7 @@ PRD хранится как отдельный entry point и используе
 python3 -m http.server 8000
 ```
 
-После этого откройте:
-
-- `http://localhost:8000` — Product Concept;
-- `http://localhost:8000/prd/` — Product Requirements Document.
+После этого откройте `http://localhost:8000`.
 
 ## Production build
 
