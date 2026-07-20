@@ -13,14 +13,14 @@
   <header class="topbar" data-topbar>
     <a class="brand" href="#cover" aria-label="В начало PRD">
       <span class="brand-mark"><img src="../assets/finam-logo.ico" alt=""></span>
-      <span>AI-Скринер <small>Product Requirements Document</small></span>
+      <span>AI-Скринер <small>Требования к продукту</small></span>
     </a>
     <nav class="nav" aria-label="Навигация по PRD">
       <a href="#summary">Обзор</a>
       <a href="#economics">Экономика</a>
       <a href="#solution">Решение</a>
       <a href="#requirements">Требования</a>
-      <a href="#delivery">Delivery</a>
+      <a href="#delivery">Этапы</a>
       <a class="concept-link" href="../index.html">Концепция ↗</a>
     </nav>
     <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
@@ -37,17 +37,16 @@
         <aside class="cover-meta card">
           <span class="meta-label">Назначение документа</span>
           <strong>Рассмотрение проекта и согласование объёма работ</strong>
-          <div><span>Контур</span><b>Platform MVP</b></div>
+          <div><span>Контур</span><b>Платформенный MVP</b></div>
           <div><span>Статус</span><b>На согласование</b></div>
           <div><span>Версия</span><b>PRD · 2026</b></div>
         </aside>
       </div>
-      <div class="container slide-index">01 / 21</div>
     </section>
 
-    <section class="section" id="summary" data-slide="02">
+    <section class="section summary-section" id="summary" data-slide="02">
       <div class="container">
-        <header class="section-head"><span class="section-number">02 · Обзор / резюме</span><h2>Аналитика становится управляемым сценарием действия</h2><p>Продукт связывает аналитику, оптимизацию, эксперимент и реальные сделки в одном контексте.</p></header>
+        <header class="section-head label-only"><span class="section-number">02 · Обзор / резюме</span></header>
         <div class="summary-grid">
           <article class="statement-block"><span>Цель</span><strong>Устранить разрыв между анализом портфеля и действием: дать понятный план изменений и возможность подтвердить сделки внутри продукта, сохраняя полный контроль.</strong></article>
           <article class="control-block"><span>Ключевой принцип</span><strong>AI помогает принять решение.</strong><b>Сделки всегда подтверждает пользователь.</b></article>
@@ -58,112 +57,119 @@
 
     <section class="section section-tint" id="problem" data-slide="03">
       <div class="container">
-        <header class="section-head"><span class="section-number">03 · Проблема / цель</span><h2>Разрыв между диагнозом и сделкой создаёт четыре потери</h2></header>
-        <div class="problem-grid compact-cards">
-          <article class="problem-card"><span>01</span><h3>Есть диагноз, нет плана</h3><p>Состояние портфеля видно, но конкретных действий нет.</p></article>
-          <article class="problem-card"><span>02</span><h3>Эксперимент обрывается</h3><p>Виртуальный портфель не доводит до реального применения.</p></article>
-          <article class="problem-card"><span>03</span><h3>Контекст теряется</h3><p>В торговле пропадает связь сделок с аналитическим решением.</p></article>
-          <article class="problem-card"><span>04</span><h3>Много ручной работы</h3><p>Инструменты, объёмы и счета приходится сводить вручную.</p></article>
-        </div>
-        <div class="target-strip"><span>Целевое состояние</span><ul><li>Конкретный план покупки и продажи</li><li>Перенос виртуального сценария в реальный</li><li>Исполнение в аналитическом контексте</li><li>Учёт счёта, лотов и ограничений</li></ul></div>
-      </div>
-    </section>
-
-    <section class="section dark-section" id="business" data-slide="04">
-      <div class="container">
-        <header class="section-head"><span class="section-number">04 · Влияние на бизнес</span><h2>Ценность проверяется по всей воронке — от анализа до повторного использования</h2><p>Все эффекты ниже — гипотезы до получения результатов пилота.</p></header>
-        <div class="business-effects"><span>Рост конверсии от анализа к сделке</span><span>Переход из виртуального портфеля в реальный</span><span>Рост оборота и комиссий</span><span>Повышение удержания</span><span>Рост ценности AI-скринера</span><span>Платформа для профессиональных пользователей</span></div>
-        <div class="metrics-ledger">
-          <article><code>optimization_started</code><p>Запущена оптимизация</p></article><article><code>plan_generated</code><p>Сформирован план</p></article><article><code>plan_confirmed</code><p>План подтверждён</p></article><article><code>order_created</code><p>Создана заявка</p></article><article><code>order_filled</code><p>Заявка исполнена</p></article><article><code>commission_generated</code><p>Получена комиссия</p></article><article><code>virtual_to_real_conversion</code><p>Переход в реальный портфель</p></article><article><code>optimization_repeat_rate</code><p>Повторная оптимизация</p></article>
+        <header class="section-head label-only"><span class="section-number">03 · Проблема</span></header>
+        <div class="state-comparison" aria-label="Сопоставление текущего и целевого состояния">
+          <div class="comparison-head"><span>Текущее состояние</span><i></i><span>Целевое состояние</span></div>
+          <article><div class="current-cell"><strong>Есть диагноз, нет плана</strong><p>Состояние портфеля видно, но конкретных действий нет.</p></div><i>→</i><strong>Конкретный план покупки и продажи</strong></article>
+          <article><div class="current-cell"><strong>Эксперимент обрывается</strong><p>Виртуальный портфель не доводит до реального применения.</p></div><i>→</i><strong>Перенос виртуального сценария в реальный</strong></article>
+          <article><div class="current-cell"><strong>Контекст теряется</strong><p>В торговле пропадает связь сделок с аналитическим решением.</p></div><i>→</i><strong>Исполнение в аналитическом контексте</strong></article>
+          <article><div class="current-cell"><strong>Много ручной работы</strong><p>Инструменты, объёмы и счета приходится сводить вручную.</p></div><i>→</i><strong>Учёт счёта, лотов и ограничений</strong></article>
         </div>
       </div>
     </section>
 
-    <section class="section economics-hero" id="economics" data-slide="05">
-      <div class="container economics-grid">
-        <header class="section-head"><span class="section-number">05 · Численная оценка прибыли</span><h2>Около 2 млн ₽ комиссионного дохода в месяц</h2><div class="hypothesis-label">Предварительная гипотеза · требует проверки в рамках пилота</div></header>
-        <div class="input-stack"><article><span>Ядро аудитории</span><strong>10 000</strong><small>пользователей</small></article><i>×</i><article><span>Использование</span><strong>2%</strong><small>гипотеза</small></article><i>×</i><article><span>ARPPU</span><strong>10 000 ₽</strong><small>в месяц</small></article><i>=</i><article class="result-card"><span>Потенциал</span><strong>≈ 2 000 000 ₽</strong><small>в месяц</small></article></div>
+    <section class="section" id="users" data-slide="04">
+      <div class="container">
+        <header class="section-head label-only"><span class="section-number">04 · Целевые пользователи</span></header>
+        <div class="three-grid target-users">
+          <article class="audience-card"><div class="avatar">01</div><h3>Продвинутый инвестор / квант</h3><p>Задаёт критерии и ограничения, применяет свой LLM и собственные идеи, работает с портфелем как с системой.</p></article>
+          <article class="audience-card"><div class="avatar">02</div><h3>Клиент с реальным портфелем</h3><p>Хочет улучшить структуру портфеля, безопасно проверить изменения и применить их к счёту.</p></article>
+          <article class="audience-card"><div class="avatar">03</div><h3>Пользователь виртуального портфеля</h3><p>Собрал стратегию без риска и хочет перенести её в реальный портфель.</p></article>
+        </div>
       </div>
     </section>
 
-    <section class="section section-tint" id="calculation" data-slide="06">
+    <section class="section dark-section" id="business" data-slide="05">
       <div class="container">
-        <header class="section-head"><span class="section-number">06 · Описание расчёта прибыли</span><h2>Результат линейно зависит от использования и ARPPU</h2></header>
-        <div class="formula-large">10 000 <i>×</i> 2% <i>×</i> 10 000 ₽ <i>=</i> <strong>2 000 000 ₽ / месяц</strong></div>
-        <div class="definition-row"><span><b>10 000</b> ядро доступной аудитории</span><span><b>2%</b> доля использующих сценарий</span><span><b>10 000 ₽</b> комиссионный ARPPU</span></div>
-        <div class="scenario-table table-card"><div class="table-scroll"><table><thead><tr><th>Сценарий</th><th>Использование</th><th>Потенциал / месяц</th><th>Статус</th></tr></thead><tbody><tr><td><b>Консервативный</b></td><td>1%</td><td>≈ 1 млн ₽</td><td><span class="hypothesis-chip">Гипотеза</span></td></tr><tr class="base-row"><td><b>Базовый</b></td><td>2%</td><td><b>≈ 2 млн ₽</b></td><td><span class="hypothesis-chip">Гипотеза</span></td></tr><tr><td><b>Оптимистичный</b></td><td>5%</td><td>≈ 5 млн ₽</td><td><span class="hypothesis-chip">Гипотеза</span></td></tr></tbody></table></div></div>
-        <div class="validation-line"><b>Требуют проверки:</b><span>размер ядра</span><span>использование</span><span>ARPPU</span><span>дополнительный оборот</span><span>частота повторения</span></div>
+        <header class="section-head"><span class="section-number">05 · Влияние на бизнес</span><h2>Ценность проверяется по всей воронке — от анализа до повторного использования</h2></header>
+        <div class="business-effects"><span>Рост конверсии из анализа в сделку</span><span>Рост переходов из виртуального портфеля в реальный</span><span>Рост торгового оборота и комиссионного дохода</span><span>Повышение удержания пользователей</span><span>Рост ценности AI-скринера</span><span>Платформенный контур для профессиональных пользователей</span></div>
       </div>
     </section>
 
-    <section class="section" id="stakeholders" data-slide="07">
+    <section class="section economics-hero" id="economics" data-slide="06">
       <div class="container">
-        <header class="section-head"><span class="section-number">07 · Заинтересованные стороны</span><h2>Согласование требует трёх контуров ответственности</h2><p>Именованные владельцы не определены и должны быть назначены в Discovery.</p></header>
-        <div class="stakeholder-map"><article><header><span>01</span><h3>Product</h3></header><div><b>AI-скринер</b><b>Портфельная аналитика</b><b>Виртуальные портфели</b><b>Торговые продукты</b></div></article><article><header><span>02</span><h3>Technology</h3></header><div><b>Backend</b><b>Portfolio data</b><b>Quant / optimisation</b><b>MCP</b><b>TradeAPI</b><b>n8n</b><b>Web</b><b>Mobile</b></div></article><article><header><span>03</span><h3>Control</h3></header><div><b>Legal</b><b>Compliance</b><b>Information Security</b><b>Risk</b><b>Finance</b><b>Analytics</b></div></article></div>
+        <header class="section-head"><span class="section-number">06 · Экономическая гипотеза</span><h2>Потенциал комиссионного дохода —<br><span class="nowrap">около 2&nbsp;млн&nbsp;₽/мес</span></h2></header>
+        <div class="economic-formula" aria-label="10 000 умножить на 2 процента умножить на 10 000 рублей равно 2 миллиона рублей в месяц"><div class="formula-line"><span><b>10&nbsp;000</b><small>Ядро аудитории</small></span><i>×</i><span><b>2%</b><small>Доля использующих сценарий</small></span><i>×</i><span><b>10&nbsp;000&nbsp;₽</b><small>Комиссионный доход на пользователя в&nbsp;месяц</small></span><i>=</i><strong>2&nbsp;млн&nbsp;₽/мес</strong></div></div>
+        <div class="scenario-table table-card economic-table"><div class="table-scroll"><table><thead><tr><th>Сценарий</th><th>Использование</th><th>Потенциал в месяц</th></tr></thead><tbody><tr><td><b>Консервативный</b></td><td>1%</td><td>≈ 1 млн ₽</td></tr><tr class="base-row"><td><b>Базовый</b></td><td>2%</td><td><b>≈ 2 млн ₽</b></td></tr><tr><td><b>Оптимистичный</b></td><td>5%</td><td>≈ 5 млн ₽</td></tr></tbody></table></div></div>
+        <p class="economic-note">Предварительная оценка. Параметры требуют проверки в пилоте.</p>
       </div>
     </section>
 
-    <section class="section dark-section" id="solution" data-slide="08">
+    <section class="section dark-section" id="solution" data-slide="07">
       <div class="container">
-        <header class="section-head"><span class="section-number">08 · Описание решения</span><h2>Решение сохраняет контекст на девяти шагах</h2></header>
-        <div class="solution-chain"><div><b>01</b><span>Реальный или виртуальный портфель</span></div><i>→</i><div><b>02</b><span>Диагностика</span></div><i>→</i><div><b>03</b><span>Виртуальная копия</span></div><i>→</i><div><b>04</b><span>Цель и ограничения</span></div><i>→</i><div><b>05</b><span>Оптимизация</span></div><i>→</i><div><b>06</b><span>«Было / стало»</span></div><i>→</i><div><b>07</b><span>План сделок</span></div><i>→</i><div><b>08</b><span>Подтверждение</span></div><i>→</i><div><b>09</b><span>Исполнение и статусы</span></div></div>
-        <div class="journey-note"><b>Граница безопасности</b><span>Все эксперименты выполняются на виртуальной копии. Реальные активы изменяются только после подтверждения пользователя.</span></div>
+        <header class="section-head journey-head"><span class="section-number">07 · Пользовательский путь</span><h2>Три точки входа ведут в&nbsp;один сквозной сценарий</h2><div class="segmented" role="group" aria-label="Тип сценария"><button class="active" data-mode="real">Реальный портфель</button><button data-mode="virtual">Виртуальный портфель</button><button data-mode="quant">Квант</button></div></header>
+        <div class="timeline timeline-journey prd-journey" data-timeline data-timeline-default>
+          <article><b>01</b><div><span class="question">Точка входа</span><h3 data-real="Реальный портфель" data-virtual="Виртуальный портфель" data-quant="Собственный LLM и идеи">Реальный портфель</h3><p data-real="Действующая структура портфеля и выбранный счёт." data-virtual="Стратегия, собранная и проверенная без риска." data-quant="Собственные критерии, ограничения и аналитический процесс.">Действующая структура портфеля и выбранный счёт.</p></div></article>
+          <article><b>02</b><div><span class="question">Диагностика</span><h3>Состояние портфеля</h3><p>Состав, счёт, здоровье, доходность, риск, ликвидность, диверсификация, ключевые риски и слабые стороны.</p></div></article>
+          <article><b>03</b><div><span class="question">Без риска</span><h3>Виртуальная копия</h3><p>Система создаёт копию; все эксперименты и оптимизации выполняются на ней.</p></div></article>
+          <article><b>04</b><div><span class="question">Рамки</span><h3>Цель и ограничения</h3><p>Пользователь задаёт параметры решения.</p></div></article>
+          <article><b>05</b><div><span class="question">Расчёт</span><h3>Оптимизация</h3><p>Сервис формирует целевую структуру.</p></div></article>
+          <article><b>06</b><div><span class="question">Проверка</span><h3>«Было / стало»</h3><p>Изменения, причины и компромиссы.</p></div></article>
+          <article><b>07</b><div><span class="question">Действия</span><h3>План сделок</h3><p>Что купить или продать, сколько и почему.</p></div></article>
+          <article><b>08</b><div><span class="question">Контроль</span><h3>Подтверждение</h3><p>Пользователь проверяет и редактирует план.</p></div></article>
+          <article><b>09</b><div><span class="question">Результат</span><h3>Исполнение</h3><p>Заявки и контроль статусов на одном экране.</p></div></article>
+        </div>
+        <div class="timeline timeline-quant prd-quant" data-timeline data-timeline-quant hidden>
+          <article><b>01</b><div><span class="question">Как встроить в&nbsp;свой процесс?</span><h3>Настраивает n8n под свои задачи</h3><p>Использует MCP Скринера и собирает собственный процесс работы с&nbsp;портфелем.</p></div></article>
+          <article><b>02</b><div><span class="question">Чем дополнить модель?</span><h3>Добавляет собственную аналитику</h3><p>Например, подключает анализ новостного фона и другие внешние источники данных.</p></div></article>
+          <article><b>03</b><div><span class="question">Как автоматизировать процесс?</span><h3>Устанавливает расписание</h3><p>Автоматизирует запуск анализа и ребалансировку портфеля.</p></div></article>
+        </div>
+        <div class="journey-note"><b>Безопасный сценарий</b><span>Все эксперименты выполняются на виртуальной копии. Реальный портфель изменяется только после подтверждения пользователя.</span></div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="mvp-strategy" data-slide="08">
+      <div class="container">
+        <header class="section-head mvp-head"><span class="section-number">08 · Подход к запуску MVP</span><p>Пилот: профессиональные пользователи</p></header>
+        <div class="mvp-strategy-grid">
+          <article><header>Что входит в первый этап</header><ul><li>Ядро оптимизации</li><li>Виртуальная копия портфеля</li><li>Формирование плана сделок</li><li>Интеграция с TradeAPI</li><li>MCP</li><li>Подтверждение пользователем перед исполнением</li></ul></article>
+          <article><header>Что проверяем на пилоте</header><ul><li>Работает ли продуктовая гипотеза</li><li>Возникает ли дополнительная торговая активность</li><li>Достаточно ли качественны результаты оптимизации</li><li>Готовы ли пользователи доверять сценарию</li><li>Подтверждается ли экономическая гипотеза</li><li>Есть ли основания создавать интерфейс для массовой аудитории</li></ul></article>
+          <article><header>Показатели пилота</header><ul><li>Конверсия из анализа в подтверждённый план сделок</li><li>Переход из виртуального портфеля в реальный</li><li>Дополнительный комиссионный доход</li></ul></article>
+        </div>
       </div>
     </section>
 
     <section class="section" id="requirements" data-slide="09">
-      <div class="container req-layout"><header class="section-head"><span class="section-number">09 · Требования / вход и диагностика</span><h2>Сценарий начинается с проверяемого состояния портфеля</h2><p>Пользователь входит из реального или виртуального портфеля и до оптимизации понимает исходные данные.</p></header><div class="req-list"><article><b>FR-01</b><span>Запуск из реального или виртуального портфеля</span></article><article><b>FR-02</b><span>Состав портфеля и выбранный счёт</span></article><article><b>FR-03</b><span>Здоровье, доходность, риск, ликвидность и диверсификация</span></article><article><b>FR-04</b><span>Объяснение ключевых рисков и слабых позиций</span></article></div></div>
+      <div class="container req-layout"><header class="section-head"><span class="section-number">09 · Требования / вход и диагностика</span><h2>Что пользователь должен увидеть до&nbsp;оптимизации</h2><p>Функциональные требования к&nbsp;входу и&nbsp;диагностике портфеля</p></header><div class="req-list"><article><span>Вход из реального или виртуального портфеля</span></article><article><span>Состав портфеля и выбранный счёт</span></article><article><span>Ключевые показатели состояния: здоровье, доходность, риск, ликвидность и диверсификация</span></article><article><span>Объяснение ключевых рисков и слабых позиций</span></article></div></div>
     </section>
 
-    <section class="section section-tint" id="virtual-copy" data-slide="10">
-      <div class="container twin-state"><header class="section-head"><span class="section-number">10 · Требования / виртуальная копия</span><h2>Эксперимент отделён от реальных активов</h2></header><div class="state-card real-state"><span>Реальный портфель</span><strong>Исходное состояние</strong><p>Данные доступны для анализа, но не изменяются экспериментом.</p><b>Без изменений</b></div><div class="copy-arrow"><span>Создать копию</span>→</div><div class="state-card virtual-state"><span>Виртуальная копия</span><strong>Рабочее пространство</strong><p>Все оптимизации выполняются здесь до подтверждения.</p><b>Изменения не применены</b></div><div class="safety-rule">Интерфейс всегда явно показывает, применены изменения или остаются симуляцией.</div></div>
+    <section class="section section-tint" id="scenarios" data-slide="10">
+      <div class="container"><header class="section-head"><span class="section-number">10 · Требования / сценарии оптимизации</span><h2>Два сценария дают единую целевую структуру</h2></header><div class="scenario-grid"><article class="scenario-card"><div class="scenario-top"><span>Сценарий 01</span><i>↗</i></div><h3>Оптимизация долей</h3><p>Перераспределение весов по выбранному критерию.</p><div class="allocation"><span style="--w:42%">Акции</span><span style="--w:32%">Облигации</span><span style="--w:16%">Фонды</span><span style="--w:10%">Кэш</span></div></article><article class="scenario-card"><div class="scenario-top"><span>Сценарий 02</span><i>⇄</i></div><h3>Замена активов</h3><p>Слабые активы заменяются на объяснимые альтернативы.</p><div class="swap"><div><s>Слабый актив</s><small>причина выделена</small></div><i>→</i><div><b>Замена</b><small>логика объяснена</small></div></div></article></div><div class="optimization-params"><span>Перед расчётом пользователь задаёт параметры оптимизации</span><div><article><b>Цель</b><p>Повысить доходность; снизить риск или просадку; повысить ликвидность; улучшить соотношение риска и доходности; заменить слабые активы.</p></article><article><b>Ограничения</b><p>Показатели не хуже текущих; минимальный остаток денежных средств; позиции, которые нельзя продавать.</p></article><article><b>Область</b><p>Акции; облигации; весь портфель.</p></article></div></div><div class="shared-result"><span>Единый результат</span><strong>Целевая структура портфеля, готовая к сравнению и планированию сделок.</strong></div></div>
     </section>
 
-    <section class="section" id="settings" data-slide="11">
-      <div class="container"><header class="section-head"><span class="section-number">11 · Требования / настройки оптимизации</span><h2>Пользователь задаёт цель и допустимые рамки</h2><p>Сервис рассчитывает сценарий, но не выбирает стратегию вместо пользователя.</p></header><div class="settings-matrix"><article><header>Цели</header><ul><li>Доходность</li><li>Риск</li><li>Ликвидность</li><li>Коэффициент Шарпа</li><li>Просадка</li><li>Замена слабых активов</li></ul></article><article><header>Ограничения</header><ul><li>Риск, ликвидность или доходность не хуже текущих</li><li>Минимальный остаток денежных средств</li><li>Позиции, которые нельзя продавать</li><li>Область: акции, облигации или весь портфель</li></ul></article></div></div>
+    <section class="section" id="comparison" data-slide="11">
+      <div class="container"><header class="section-head"><span class="section-number">11 · Требования / «Было / стало»</span><h2>Изменения видны в цифрах и объяснены по каждой метрике</h2></header><div class="comparison-table table-card"><div class="table-scroll"><table><thead><tr><th>Показатель</th><th>Было</th><th>Изменение</th><th>Стало</th><th>Причина</th></tr></thead><tbody><tr><td><b>Структура</b></td><td>Акции 54% · Облигации 28%</td><td>−8 / +6 п.п.</td><td>Акции 46% · Облигации 34%</td><td>Снижена концентрация в акциях</td></tr><tr><td><b>Здоровье портфеля</b></td><td>73</td><td class="positive">+11</td><td>84</td><td>Улучшена структура активов</td></tr><tr><td><b>Риск и доходность</b></td><td>50 · 11,5%</td><td>+2 · +3,3 п.п.</td><td>52 · 14,8%</td><td>Риск изменён в заданных рамках</td></tr><tr><td><b>Ликвидность</b></td><td>50</td><td class="positive">+5</td><td>55</td><td>Увеличена доля ликвидных инструментов</td></tr><tr><td><b>Диверсификация</b></td><td>70</td><td class="positive">+8</td><td>78</td><td>Усилено распределение между классами активов</td></tr></tbody></table></div></div><div class="comparison-notes"><article><span>Причины изменений</span><p>Снижена концентрация в слабых активах, увеличена доля устойчивых и ликвидных инструментов.</p></article><article><span>Возможные компромиссы</span><p>Рост ожидаемой доходности допускает небольшое увеличение риска в заданных пользователем рамках.</p></article></div></div>
     </section>
 
-    <section class="section section-tint" id="scenarios" data-slide="12">
-      <div class="container"><header class="section-head"><span class="section-number">12 · Требования / сценарии оптимизации</span><h2>Два сценария дают единую целевую структуру</h2></header><div class="scenario-grid"><article class="scenario-card"><div class="scenario-top"><span>Сценарий 01</span><i>↗</i></div><h3>Оптимизация долей</h3><p>Перераспределение весов по выбранному критерию.</p><div class="allocation"><span style="--w:42%">Акции</span><span style="--w:32%">Облигации</span><span style="--w:16%">Фонды</span><span style="--w:10%">Кэш</span></div></article><article class="scenario-card"><div class="scenario-top"><span>Сценарий 02</span><i>⇄</i></div><h3>Замена активов</h3><p>Слабые активы заменяются на объяснимые альтернативы.</p><div class="swap"><div><s>Слабый актив</s><small>причина выделена</small></div><i>→</i><div><b>Замена</b><small>логика объяснена</small></div></div></article></div><div class="shared-result"><span>Единый результат</span><strong>Целевая структура портфеля, готовая к сравнению и планированию сделок.</strong></div></div>
+    <section class="section section-tint" id="trade-plan" data-slide="12">
+      <div class="container"><header class="section-head"><span class="section-number">12 · Требования / план сделок</span><h2>Целевая структура превращается в редактируемый план действий</h2></header><div class="table-card"><div class="table-scroll"><table><thead><tr><th>Действие</th><th>Инструмент</th><th>Изменение</th><th>Сумма</th><th>Причина</th><th>Статус</th></tr></thead><tbody><tr><td><span class="action sell">Продать</span></td><td><b>GAZP</b></td><td class="negative">−50 шт.</td><td>≈ 8 700 ₽</td><td>Отрицательный прогноз, снижает здоровье</td><td><span class="status ready">Готово</span></td></tr><tr><td><span class="action reduce">Сократить</span></td><td><b>SBER</b></td><td class="negative">−20 шт.</td><td>≈ 6 200 ₽</td><td>Превышена целевая доля</td><td><span class="status ready">Готово</span></td></tr><tr><td><span class="action buy">Купить</span></td><td><b>LKOH</b></td><td class="positive">+3 шт.</td><td>≈ 21 000 ₽</td><td>Повышает качество активов</td><td><span class="status ready">Готово</span></td></tr><tr><td><span class="action buy">Купить</span></td><td><b>ОФЗ 26244</b></td><td class="positive">+10 шт.</td><td>≈ 9 800 ₽</td><td>Повышает устойчивость</td><td><span class="status attention">Расчёт НКД</span></td></tr><tr><td><span class="action buy">Купить</span></td><td><b>Фонд денежного рынка</b></td><td class="positive">+5 000 ₽</td><td>≈ 5 000 ₽</td><td>Повышает ликвидность</td><td><span class="status ready">Готово</span></td></tr></tbody></table></div><footer><div><span>Итого к сделкам</span><strong>≈ 50 700 ₽</strong></div><div><span>Ожидаемый эффект</span><strong>Здоровье 73 <i>→</i> 84</strong></div><p>Пользователь может изменить количество или удалить отдельные действия до подтверждения.</p></footer><div class="plan-support"><span>План автоматически учитывает</span><div><b>Лотность</b><b>Комиссии</b><b>Ограничения счёта</b><b>Квалификацию</b><b>Доступные средства</b></div><button type="button">Редактировать план</button></div></div></div>
     </section>
 
-    <section class="section" id="comparison" data-slide="13">
-      <div class="container"><header class="section-head"><span class="section-number">13 · Требования / «Было / стало»</span><h2>Каждое изменение измеримо и объяснимо</h2></header><div class="compare-prd"><article><span>Текущее состояние</span><h3>Было</h3><ul><li>Структура</li><li>Здоровье портфеля</li><li>Риск и доходность</li><li>Ликвидность</li><li>Диверсификация</li></ul></article><div class="delta-column"><b>Δ</b><span>Абсолютное изменение</span><span>Относительное изменение</span><span>Причины</span><span>Компромиссы</span></div><article class="target"><span>Целевая структура</span><h3>Стало</h3><ul><li>Структура</li><li>Здоровье портфеля</li><li>Риск и доходность</li><li>Ликвидность</li><li>Диверсификация</li></ul></article></div></div>
+    <section class="section" id="execution" data-slide="13">
+      <div class="container exec-grid"><header class="section-head"><span class="section-number">13 · Требования / исполнение</span><h2>Исполнение начинается только после явного подтверждения</h2><div class="confirmation-gate"><span>План</span><i>→</i><b>Подтверждение пользователя</b><i>→</i><span>Заявки</span></div></header><div class="execution-panel"><ul><li>Заявки выставляются и отслеживаются на одном экране.</li><li>План пересчитывается при изменении цен, доступных средств или состава портфеля.</li><li>Каждая заявка связана с исходным решением оптимизации и пунктом плана.</li></ul><div class="status-list"><span><i class="dot green"></i>Исполнена</span><span><i class="dot half"></i>Частично исполнена</span><span><i class="dot gray"></i>Не исполнена</span><span><i class="dot red"></i>Отклонена</span><span><i class="dot orange"></i>Требует действия</span><span><i class="dot purple"></i>План устарел</span></div><p class="decision-link">Пользователь видит, какое исходное решение привело к каждой заявке и как её статус влияет на оставшуюся часть плана.</p></div></div>
     </section>
 
-    <section class="section section-tint" id="trade-plan" data-slide="14">
-      <div class="container"><header class="section-head"><span class="section-number">14 · Требования / план сделок</span><h2>Целевая структура переводится в редактируемый план</h2></header><div class="table-card"><div class="table-scroll"><table><thead><tr><th>Действие</th><th>Инструмент</th><th>Количество / изменение</th><th>Сумма</th><th>Причина</th><th>Статус</th></tr></thead><tbody><tr><td><span class="action sell">Продать</span></td><td><b>Инструмент</b></td><td>− позиция</td><td>Расчёт</td><td>Причина изменения</td><td><span class="status ready">Готово</span></td></tr><tr><td><span class="action buy">Купить</span></td><td><b>Инструмент</b></td><td>+ позиция</td><td>Расчёт</td><td>Причина изменения</td><td><span class="status attention">Проверка</span></td></tr></tbody></table></div><div class="plan-requirements"><span>План учитывает</span><b>Лотность</b><b>Квалификацию</b><b>Комиссии</b><b>Доступные средства</b><b>Ограничения счёта</b><strong>Пользователь может изменить план до подтверждения.</strong></div></div></div>
+    <section class="section dark-section" id="non-functional" data-slide="14">
+      <div class="container"><header class="section-head"><span class="section-number">14 · Нефункциональные требования</span><h2>Обязательные требования<br>к&nbsp;решению</h2></header><div class="nfr-grid"><article><h3>Юридическая корректность</h3><p>Формулировки не должны квалифицироваться как индивидуальная инвестиционная рекомендация.</p></article><article><h3>Точность расчётов</h3><p>План строится на актуальных данных портфеля и рыночных котировках.</p></article><article><h3>Актуальность плана</h3><p>При изменении цен, доступных средств или состава портфеля план пересчитывается до подтверждения.</p></article><article><h3>Простота сценария</h3><p>Торговые ограничения учитываются системой, но не перегружают основной пользовательский путь.</p></article></div></div>
     </section>
 
-    <section class="section" id="execution" data-slide="15">
-      <div class="container exec-grid"><header class="section-head"><span class="section-number">15 · Требования / исполнение</span><h2>Исполнение начинается только после явного подтверждения</h2><div class="confirmation-gate"><span>План</span><i>→</i><b>Подтверждение пользователя</b><i>→</i><span>Заявки</span></div></header><div class="execution-panel"><ul><li>Размещение и отслеживание заявок в одном контексте</li><li>Пересчёт при изменении цен, средств или состава портфеля</li><li>Связь заявки с исходным аналитическим решением</li></ul><div class="status-list"><span><i class="dot green"></i>Исполнена</span><span><i class="dot half"></i>Частично исполнена</span><span><i class="dot gray"></i>Не исполнена</span><span><i class="dot red"></i>Отклонена</span><span><i class="dot orange"></i>Требует действия</span><span><i class="dot purple"></i>План устарел</span></div></div></div>
+    <section class="section" id="acceptance" data-slide="15">
+      <div class="container"><header class="section-head"><span class="section-number">15 · Критерии приёмки</span><h2>Готовность подтверждается продуктом, качеством и измеримостью</h2></header><div class="acceptance-grid"><article><header>Функциональные</header><ul><li>Вход из реального и виртуального портфелей</li><li>Создана виртуальная копия</li><li>Поддержаны цели и ограничения</li><li>Сформирована целевая структура</li><li>Доступно сравнение «Было / стало»</li><li>Сформирован редактируемый план</li><li>Нет исполнения без подтверждения</li><li>Статусы возвращаются в контекст плана</li><li>Устаревший план пересчитывается</li></ul></article><article><header>Качественные</header><ul><li>Понятно, где симуляция, а где реальные изменения</li><li>Каждое изменение объяснено</li><li>Торговые ограничения понятны</li><li>Юридические формулировки согласованы</li></ul></article><article><header>Бизнес-критерии</header><ul><li>Полный сценарий измерим</li><li>Дополнительная торговая активность отделима</li><li>Пилот позволяет проверить экономическую гипотезу</li></ul></article></div></div>
     </section>
 
-    <section class="section dark-section" id="non-functional" data-slide="16">
-      <div class="container"><header class="section-head"><span class="section-number">16 · Нефункциональные требования</span><h2>Четыре свойства ограничивают способ реализации</h2></header><div class="nfr-grid"><article><b>Legal</b><h3>Без инвестиционной рекомендации</h3><p>Формулировки не должны квалифицироваться как инвестиционная рекомендация.</p></article><article><b>Accuracy</b><h3>Достоверные расчёты</h3><p>Используются реальные данные портфеля и актуальные рыночные цены.</p></article><article><b>Freshness</b><h3>Актуальный план</h3><p>При изменении рынка план пересчитывается до подтверждения.</p></article><article><b>Simplicity</b><h3>Контролируемая сложность</h3><p>Торговые детали не перегружают основной сценарий.</p></article></div></div>
+    <section class="section section-tint" id="delivery" data-slide="16">
+      <div class="container"><header class="section-head"><span class="section-number">16 · Сроки и этапы</span><h2>До платформенного MVP — ориентировочно 4–5 месяцев</h2><p>Сроки предварительные и уточняются после этапа исследования и согласования.</p></header><div class="delivery-timeline five-stage"><article><span>01</span><h3>Исследование и согласование объёма</h3><b>4 недели</b></article><article><span>02</span><h3>Ядро и расчёты</h3><b>4–6 недель</b></article><article><span>03</span><h3>MCP и TradeAPI</h3><b>4–6 недель</b></article><article><span>04</span><h3>Стабилизация и проверка гипотез</h3><b>2–4 недели</b></article><article class="post-mvp"><span>05</span><em>После подтверждения MVP</em><h3>Интерфейс для массовой аудитории</h3><b>4–6 недель</b></article></div></div>
     </section>
 
-    <section class="section" id="acceptance" data-slide="17">
-      <div class="container"><header class="section-head"><span class="section-number">17 · Критерии приёмки</span><h2>Готовность подтверждается продуктом, качеством и измеримостью</h2></header><div class="acceptance-grid"><article><header>Functional <span>9</span></header><ul><li>Вход из реального и виртуального портфелей</li><li>Создана виртуальная копия</li><li>Поддержаны цели и ограничения</li><li>Сформирована целевая структура</li><li>Доступно сравнение «Было / стало»</li><li>Сформирован редактируемый план</li><li>Нет исполнения без подтверждения</li><li>Статусы возвращаются в контекст плана</li><li>Устаревший план пересчитывается</li></ul></article><article><header>Quality <span>4</span></header><ul><li>Понятно, где симуляция, а где реальные изменения</li><li>Каждое изменение объяснено</li><li>Торговые ограничения понятны</li><li>Юридические формулировки согласованы</li></ul></article><article><header>Business <span>3</span></header><ul><li>Полная воронка измерима</li><li>Инкрементальная активность отделима</li><li>Пилот проверяет экономическую гипотезу</li></ul></article></div></div>
+    <section class="section section-tint" id="risks" data-slide="17">
+      <div class="container"><header class="section-head"><span class="section-number">17 · Риски и меры снижения</span><h2>Ключевые риски проекта</h2></header><div class="risk-matrix"><div class="risk-head"><span>Риск</span><span>Мера снижения</span></div><article><b>Задержка согласования объёма MVP</b><p>Зафиксировать границы первого этапа и ответственных за решения до начала разработки.</p></article><article><b>Недостаточное качество оптимизации</b><p>Проверять результаты на эталонных сценариях и исторических данных, обеспечивать объяснимость и экспертную оценку.</p></article><article><b>Ограничения TradeAPI и частичное исполнение</b><p>Заранее проверить поддерживаемые операции, обработку статусов и пересчёт оставшейся части плана.</p></article><article><b>Юридические ограничения</b><p>Подключить юридическую службу и комплаенс на этапе исследования и согласования.</p></article></div></div>
     </section>
 
-    <section class="section section-tint" id="delivery" data-slide="18">
-      <div class="container"><header class="section-head"><span class="section-number">18 · Сроки и этапы</span><h2>До Platform MVP — ориентировочно 4–5 месяцев</h2><p>Диапазоны предварительные и уточняются после Discovery.</p></header><div class="delivery-timeline"><article><span>01</span><h3>Discovery и согласование scope</h3><b>4 недели</b></article><article><span>02</span><h3>Ядро и расчёты данных</h3><b>4–6 недель</b></article><article><span>03</span><h3>MCP + TradeAPI</h3><b>4–6 недель</b></article><article><span>04</span><h3>Стабилизация и бизнес-валидация</h3><b>2–4 недели</b></article></div><div class="phase-two"><span>Phase 2</span><strong>Mass-market UI</strong><b>4–6 недель после валидации</b></div></div>
-    </section>
-
-    <section class="section" id="scope" data-slide="19">
-      <div class="container"><header class="section-head"><span class="section-number">19 · Объём MVP</span><h2>Первый MVP — платформенный контур для профессионалов</h2><p>Это не полный массовый интерфейс.</p></header><div class="scope-grid"><div class="in-scope"><header><span>Входит</span><b>Platform MVP</b></header><ol><li>API портфеля, оптимизации и плана изменений</li><li>MCP для скринера, оптимизации и портфеля</li><li>Интеграция TradeAPI</li><li>Режимы simulate / confirm / auto</li><li>Референсные n8n-workflows и документация</li><li>Пилот с профессиональными трейдерами</li></ol></div><div class="out-scope"><header><span>Не входит</span><b>После валидации</b></header><ul><li>Полный mass-market UI</li><li>Готовые коробочные стратегии</li></ul></div></div></div>
-    </section>
-
-    <section class="section section-tint" id="risks" data-slide="20">
-      <div class="container"><header class="section-head"><span class="section-number">20 · Риски и меры снижения</span><h2>Критические риски закрываются до масштабирования</h2></header><div class="risk-matrix"><div class="risk-head"><span>Риск</span><span>Мера снижения</span></div><article><b>Задержка согласования scope</b><p>Зафиксировать границы MVP и владельцев решений до разработки.</p></article><article><b>Низкое качество оптимизации</b><p>Референсные сценарии, историческая проверка, объяснимость и экспертная оценка.</p></article><article><b>Ограничения TradeAPI</b><p>Ранний технический spike и матрица поддерживаемых операций.</p></article><article><b>Юридические ограничения</b><p>Подключить Legal и Compliance в Discovery.</p></article><article><b>Устаревание плана</b><p>TTL и обязательный пересчёт.</p></article><article><b>Частичное исполнение</b><p>Обработка статусов и пересчёт остаточного плана.</p></article><article><b>Недостаточная бизнес-ценность</b><p>Измеримый пилот до масштабирования.</p></article></div></div>
-    </section>
-
-    <section class="section final-section questions-section" id="questions" data-slide="21">
-      <div class="container"><div class="final-card"><span class="section-number">21 · Открытые вопросы</span><h2>Для старта Discovery нужны решения по пяти блокам</h2><div class="question-groups"><article><h3>Product</h3><ul><li>Кто первая целевая аудитория?</li><li>Какие минимальные цели входят в MVP?</li><li>Что означает auto при обязательном подтверждении?</li><li>Можно ли редактировать отдельные сделки?</li></ul></article><article><h3>Optimisation</h3><ul><li>Какие модель и алгоритм используются?</li><li>Как оценивается качество?</li><li>Какие ограничения обязательны?</li><li>Как объясняются замены?</li></ul></article><article><h3>Trading</h3><ul><li>Какие типы заявок поддерживаются?</li><li>Как обрабатывается частичное исполнение?</li><li>Что происходит при нехватке средств?</li><li>Как учесть счета и маржу?</li></ul></article><article><h3>Legal</h3><ul><li>Где граница инвестиционной рекомендации?</li><li>Какие формулировки допустимы?</li><li>Возможно ли автоматическое исполнение?</li></ul></article><article><h3>Business</h3><ul><li>Как валидируется ARPPU?</li><li>Как отделить прирост оборота от каннибализации?</li><li>Каковы достаточные размер и длительность пилота?</li></ul></article></div><div class="decision"><span>Решение для review</span><strong>Согласовать границы Platform MVP и запустить Discovery для закрытия открытых вопросов.</strong><a href="#cover">В начало <i>↑</i></a></div></div></div>
+    <section class="section final-section questions-section" id="questions" data-slide="18">
+      <div class="container"><div class="final-card"><span class="section-number">18 · Открытые вопросы</span><h2>Для начала этапа исследования нужны решения по пяти блокам</h2><div class="question-groups"><article><h3>Продукт</h3><ul><li>Кто первая целевая аудитория?</li><li>Какие минимальные цели входят в MVP?</li><li>Как трактуется автоматический режим при обязательном подтверждении?</li><li>Можно ли редактировать отдельные сделки?</li></ul></article><article><h3>Оптимизация</h3><ul><li>Какие модель и алгоритм используются?</li><li>Как оценивается качество?</li><li>Какие ограничения обязательны?</li><li>Как объясняются замены?</li></ul></article><article><h3>Торговля</h3><ul><li>Какие типы заявок поддерживаются?</li><li>Как обрабатывается частичное исполнение?</li><li>Что происходит при нехватке средств?</li><li>Как учесть счета и маржу?</li></ul></article><article><h3>Правовые вопросы</h3><ul><li>Где граница инвестиционной рекомендации?</li><li>Какие формулировки допустимы?</li><li>Возможно ли автоматическое исполнение?</li></ul></article><article><h3>Бизнес</h3><ul><li>Как проверить комиссионный доход на платящего пользователя?</li><li>Как отделить прирост оборота от каннибализации?</li><li>Каковы достаточные размер и длительность пилота?</li></ul></article></div><div class="decision"><span>Решение для согласования</span><strong>Согласовать границы платформенного MVP и начать этап исследования для закрытия открытых вопросов.</strong><a href="#cover">В начало <i>↑</i></a></div></div></div>
     </section>
   </main>
-  <footer class="footer"><div class="container"><span>AI-Скринер · Product Requirements Document</span><span>Финам · 2026</span></div></footer>
+  <footer class="footer"><div class="container"><span>AI-Скринер · Требования к продукту</span><span>Финам · 2026</span></div></footer>
   <script src="../main.js"></script>
 </body>
 </html>
